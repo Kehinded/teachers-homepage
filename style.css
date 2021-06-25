@@ -60,27 +60,30 @@
 .category-show {
   cursor: pointer; }
 
-.category-box {
-  position: absolute;
-  top: 200%;
-  left: -20%;
-  z-index: 200;
-  width: 25rem;
-  box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  display: none;
-  color: rgba(0, 0, 0, 0.7); }
-  .category-box:hover {
-    display: block; }
-  @media only screen and (max-width: 50em) {
-    .category-box {
-      left: 0%; } }
-  @media only screen and (max-width: 38em) {
-    .category-box {
-      left: 10%; } }
-  @media only screen and (max-width: 19em) {
-    .category-box {
-      left: 0%; } }
+  .category-box {
+    position: absolute;
+    top: 200%;
+    left: 10%;    
+    z-index: 200;
+    width: 25rem;
+    box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: none;
+    color: rgba(0, 0, 0, 0.7); }
+    .category-box:hover {
+      display: block; }
+    @media only screen and (max-width: 50em) {
+      .category-box {
+        left: 0%; } }  
+    @media only screen and (max-width: 38em) {
+      .category-box {
+        left: 25%; } }
+        @media only screen and (max-width: 26em) {
+          .category-box {
+            left: 12%; } }
+    @media only screen and (max-width: 19em) {
+      .category-box {
+        left: 0%; } }
   .category-box .list {
     list-style: none;
     padding: 1.5rem 2rem;
@@ -183,7 +186,7 @@
   .notification-show .notification-box {
     position: absolute;
     top: 180%;
-    left: -700%;
+    left: -800%;
     width: 28rem;
     background-color: #fff;
     box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.2);
@@ -192,10 +195,18 @@
     font-weight: 700;
     display: none;
     transition: all .4s; }
-    @media only screen and (max-width: 77em) {
+    @media only screen and (max-width: 98em) {
       .notification-show .notification-box {
-        left: none;
-        right: 500%; } }
+        left: -1000%;} }
+        @media only screen and (max-width: 93em) {
+          .notification-show .notification-box {
+            left: -19vw;} } 
+            @media only screen and (max-width: 77em) {
+              .notification-show .notification-box {
+                left: -25vw;} }       
+                @media only screen and (max-width: 49em) {
+                  .notification-show .notification-box {
+                    left: -30vw;} }      
     @media only screen and (max-width: 38em) {
       .notification-show .notification-box {
         left: -1000%; } }
@@ -605,6 +616,9 @@ body {
     .section-proceed .content-box .box {
       display: flex;
       justify-content: space-between; }
+      .section-proceed .content-box > *:not(:last-child) {
+        display: none;
+      }
       @media only screen and (max-width: 22em) {
         .section-proceed .content-box .box {
           flex-direction: column;
@@ -613,6 +627,7 @@ body {
             margin-bottom: 1rem;
             justify-content: center;
             align-items: center; } }
+            
       .section-proceed .content-box .box .text {
         align-self: center;
         font-size: 3rem;
@@ -639,6 +654,12 @@ body {
         flex: 1;
         height: 22rem;
         width: 22rem; }
+        /* .proceed-box-2{
+          display: none;
+        }
+        .proceed-box-3{
+          display: none;
+        } */
         @media only screen and (max-width: 46em) {
           .section-proceed .content-box .box .img {
             margin-left: 2.5rem; } }
@@ -657,7 +678,7 @@ body {
             margin: 0rem auto;
             text-align: center;
             margin-top: 1rem;
-            width: 5rem;
+            width: 5rem;  
             height: 5rem; } }
 
 .section-reason {
@@ -707,9 +728,21 @@ body {
             font-size: 1.23rem;
             letter-spacing: unset; } }
 
+            .homepage-link{
+                order: -1;  
+                text-decoration: none;
+                color: #888888;
+                display: flex;
+                align-items: center;  
+              }
+          
+              .homepage-link span{
+                margin-right: .5rem;  
+              }
+
 .section-title {
   padding: 8rem 9rem 2rem 9rem;
-  min-height: 30rem;
+  min-height: 40rem;
   background-image: linear-gradient(to bottom, rgba(192, 151, 40, 0.9), rgba(192, 151, 40, 0.9)), url("./images/tittle-teacher-img.jpg");
   background-position: center;
   background-size: cover;
