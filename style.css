@@ -710,7 +710,7 @@ body {
 .section-title {
   padding: 8rem 9rem 2rem 9rem;
   min-height: 30rem;
-  background-image: linear-gradient(to bottom, rgba(192, 151, 40, 0.9), rgba(192, 151, 40, 0.9)), url("/images/tittle-teacher-img.jpg");
+  background-image: linear-gradient(to bottom, rgba(192, 151, 40, 0.9), rgba(192, 151, 40, 0.9)), url("./images/tittle-teacher-img.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -764,7 +764,7 @@ body {
   grid-row: 8 / 9;
   grid-column: full-start / full-end;
   padding: 4rem 2rem;
-  background-image: url(/images/footer-img.jpg);
+  background-image: url("./images/footer-img.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
